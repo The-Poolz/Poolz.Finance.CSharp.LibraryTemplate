@@ -1,5 +1,5 @@
 <Project>
-  <PropertyGroup>
-    <PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName)</PackageId>
+  <PropertyGroup Condition="'$(IsTestProject)' != 'true'">
+    <PackageId Condition="'$(PackageId)'==''">$(MSBuildProjectName)</PackageId>
   </PropertyGroup>
 </Project>
