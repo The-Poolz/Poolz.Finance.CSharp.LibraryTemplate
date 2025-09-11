@@ -1,7 +1,7 @@
 name: Bump version
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]
 
 permissions:
   contents: write
