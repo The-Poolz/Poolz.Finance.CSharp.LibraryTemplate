@@ -36,6 +36,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           base: master
+          title: Bump version to ${{ steps.ver.outputs.version }}
           commit-message: |
             Bump version to ${{ steps.ver.outputs.version }}
           branch: bump-version-to-${{ steps.ver.outputs.version }}
